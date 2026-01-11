@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Post Title - Albert's Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #fafbfc;
+            --bg-secondary: #ffffff;
+            --text-primary: #1a1a1a;
+            --text-secondary: #6b7280;
+            --text-tertiary: #9ca3af;
+            --accent: #4f46e5;
+            --accent-hover: #4338ca;
+            --border: #e5e7eb;
+            --code-bg: #f3f4f6;
+            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.8;
+            color: var(--text-primary);
+            background-color: var(--bg-primary);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Header */
+        .header {
+            background-color: var(--bg-secondary);
+            border-bottom: 1px solid var(--border);
+            padding: 1.5rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.95);
+        }
+
+        .header-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .back-link {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .back-link:hover {
+            color: var(--accent-hover);
+        }
+
+        /* Article Container */
+        article {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        /* Title and Meta */
+        .post-header {
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid var(--border);
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+            font-weight: 700;
+        }
+
+        .post-meta {
+            color: var(--text-tertiary);
+            font-size: 0.95rem;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+        }
+
+        /* Content Styles */
+        .post-content h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            margin: 2.5rem 0 1rem 0;
+            color: var(--text-primary);
+            font-weight: 600;
+            letter-spacing: -0.01em;
+        }
+
+        .post-content h3 {
+            font-size: 1.5rem;
+            margin: 2rem 0 1rem 0;
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        .post-content p {
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            line-height: 1.9;
+        }
+
+        .post-content ul,
+        .post-content ol {
+            margin: 1.5rem 0 1.5rem 2rem;
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+
+        .post-content li {
+            margin-bottom: 0.75rem;
+            line-height: 1.8;
+        }
+
+        .post-content blockquote {
+            border-left: 4px solid var(--accent);
+            padding: 1rem 1.5rem;
+            margin: 2rem 0;
+            background-color: rgba(79, 70, 229, 0.05);
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+            color: var(--text-secondary);
+        }
+
+        .post-content code {
+            background-color: var(--code-bg);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            color: var(--accent);
+        }
+
+        .post-content pre {
+            background-color: var(--code-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+            border: 1px solid var(--border);
+        }
+
+        .post-content pre code {
+            background: none;
+            padding: 0;
+            color: var(--text-primary);
+        }
+
+        .post-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin: 2.5rem 0;
+            box-shadow: var(--shadow-md);
+        }
+
+        .post-content a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.2s ease;
+        }
+
+        .post-content a:hover {
+            border-bottom-color: var(--accent);
+        }
+
+        /* Glossary Links */
+        .glossary-link {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.2s ease;
+            cursor: help;
+        }
+
+        .glossary-link:hover {
+            border-bottom-color: var(--accent);
+        }
+
+        /* Image Captions */
+        .img-caption {
+            text-align: center;
+            color: var(--text-tertiary);
+            font-size: 0.9rem;
+            margin-top: -1.5rem;
+            margin-bottom: 2rem;
+            font-style: italic;
+        }
+
+        /* Image with Text Side-by-Side */
+        .image-text {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin: 2.5rem 0;
+        }
+
+        .image-text img {
+            width: 320px;
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: var(--shadow-md);
+            flex-shrink: 0;
+        }
+
+        .image-text .text {
+            flex: 1;
+        }
+
+        .image-text .text p {
+            margin-bottom: 1rem;
+        }
+
+        .image-text .text p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Image on the right */
+        .image-text.image-right {
+            flex-direction: row-reverse;
+        }
+
+        /* Larger image variation */
+        .image-text.large-image img {
+            width: 400px;
+        }
+
+        /* Smaller image variation */
+        .image-text.small-image img {
+            width: 240px;
+        }
+
+        /* Emphasis */
+        em {
+            font-style: italic;
+            color: var(--text-primary);
+        }
+
+        strong {
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        /* Footer */
+        .post-footer {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 2px solid var(--border);
+            text-align: center;
+        }
+
+        .post-footer a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        .post-footer a:hover {
+            color: var(--accent-hover);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            article {
+                padding: 2rem 1.5rem;
+            }
+
+            h1 {
+                font-size: 2.25rem;
+            }
+
+            .post-content h2 {
+                font-size: 1.75rem;
+            }
+
+            .post-content h3 {
+                font-size: 1.35rem;
+            }
+
+            .header-content {
+                padding: 0 1.5rem;
+            }
+
+            .image-text {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+
+            .image-text.image-right {
+                flex-direction: column;
+            }
+
+            .image-text img,
+            .image-text.large-image img,
+            .image-text.small-image img {
+                width: 100%;
+                max-width: 400px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            article {
+                padding: 1.5rem 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .post-content h2 {
+                font-size: 1.5rem;
+            }
+
+            .post-content p,
+            .post-content ul,
+            .post-content ol {
+                font-size: 1rem;
+            }
+
+            .header-content {
+                padding: 0 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="header-content">
+            <a href="../index.html" class="back-link">← Back to Blog</a>
+        </div>
+    </div>
+
+    <!-- Article -->
+    <article>
+        <div class="post-header">
+            <h1>A quote I read some time ago by Jordan Peterson</h1>
+            <div class="post-meta">January 11, 2026</div>
+        </div>
+
+        <div class="post-content">
+            <!-- Introduction -->
+            <p>One day I was reading an article about <strong>Jordan Peterson</strong>. In this article there were many
+                quotes made by the man himself, but one really stuck with me:</p>
+
+            <!-- Image on the left with text on the right -->
+            <div class="image-text">
+                <img src="../images/jordanpeterson.jpg" alt="Jordan Peterson">
+                <div class="text">
+                    <p><em>"Assume that the person you are listening to might know something you don't."</em></p>
+                    <p>This reminds me to truly listen to others, with the idea that they might know something I don't
+                        yet. And this changed the way I started listening to people. Before, I was extremely bias and I
+                        frequently, unconsciously decided this person I am talking to is a <a
+                            href="../index.html#glossary?term=blabberer" class="glossary-link">blabberer</a>. But by
+                        rewiring my brain I started listening differently. Soon I was able to extract more wisdom out of
+                        each interaction.</p>
+                    <p>While I haven't mastered this and I a lot of times still listen half to someone, I encourage all
+                        of you to try this out.</p>
+                </div>
+            </div>
+
+            <!-- Regular paragraph content -->
+            <p>More content about the article, my thoughts, or reflections can go here. You can add as many sections as
+                you want, with images on the left or right by switching the class to <code>image-right</code>.</p>
+
+            <!-- Image on the right with text on the left -->
+            <div class="image-text image-right">
+                <img src="../images/jordanpeterson2.jpg" alt="Another perspective">
+                <div class="text">
+                    <p>Sometimes I like to put the image on the right and the text on the left. This is simple to do
+                        with flexbox and keeps the blog visually interesting.</p>
+                    <p>You can include multiple paragraphs in the text section to provide detailed explanations
+                        alongside your images.</p>
+                </div>
+            </div>
+
+            <!-- More Examples -->
+            <h2>Image Size Variations</h2>
+
+            <!-- Larger image example -->
+            <div class="image-text large-image">
+                <img src="../images/example-large.jpg" alt="Large image example">
+                <div class="text">
+                    <p>Use the <code>large-image</code> class for bigger visuals (400px wide). Great for showcasing
+                        detailed screenshots or important visuals.</p>
+                </div>
+            </div>
+
+            <!-- Smaller image example -->
+            <div class="image-text small-image image-right">
+                <img src="../images/example-small.jpg" alt="Small image example">
+                <div class="text">
+                    <p>Use the <code>small-image</code> class for smaller visuals (240px wide). Perfect for icons,
+                        portraits, or compact diagrams.</p>
+                </div>
+            </div>
+
+            <!-- Conclusion -->
+            <h2>Wrapping Up</h2>
+            <p>You can mix and match these layouts throughout your blog post to create a dynamic, engaging reading
+                experience. The layouts automatically stack on mobile for perfect responsive design.</p>
+        </div>
+
+        <div class="post-footer">
+            <a href="../index.html">← Back to All Posts</a>
+        </div>
+    </article>
+</body>
+
+</html>
