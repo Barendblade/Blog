@@ -18,5 +18,23 @@ const glossaryTerms = [
         id: "epiphany",
         term: "Epiphany",
         definition: "a moment of sudden and great revelation or realization."
+    },
+    {
+        id: "exhort",
+        term: "exhort",
+        definition: "strongly encourage or urge (someone) to do something."
+    },
+    {
+        id: "devoid",
+        term: "devoid", 
+        definition: "entirely lacking or free from."
+    },
+    {
+        id: "stirs",
+        term: "stirs",
+        definition: "move or cause to move slightly."
     }
+    
+    
 ]
+
