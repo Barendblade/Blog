@@ -11,11 +11,11 @@ const blogPosts = [
         likes: 89
     },
     {
-        title: "Building Better Web Experiences",
-        date: "January 5, 2026",
-        excerpt: "Why static sites are making a comeback and how to build one from scratch. Performance, security, and simplicity all in one package.",
-        url: "posts/web-experiences.html",
-        tags: ["web development", "static sites", "performance", "javascript"],
+        title: "Nature Nurture while moments contain their own meanings. ",
+        date: "January 12, 2026",
+        excerpt: "Recently I was observing our garden, when I thought to myself a few things. I made an acronymn in my head and wrote it down later. ",
+        url: "posts/blog2.html",
+        tags: ["Nature", "nurture", "moment meaning", "epiphany" ,"change"],
         authorTop: false,
         views: 2340,
         likes: 156
@@ -50,4 +50,5 @@ const blogPosts = [
         views: 1890,
         likes: 134
     }
+
 ];
