@@ -21,9 +21,9 @@ const blogPosts = [
         likes: 156
     },
     {
-        title: "A quote I read some time ago by Jordan Peterson",
+        title: "Life advice for future me",
         date: "January 11, 2026",
-        excerpt: "Jordan Peterson once said something that changed my life. Read this short blog to find out what he said. ",
+        excerpt: "A few quotes in life can revolutionise. Here are a few thoughts and quotes that did exactly that to me.  ",
         url: "posts/blog1.html",
         tags: ["quote", "Jordan Peterson", "Listen", "learn"],
         authorTop: true,    // Your personal top blog
@@ -54,6 +54,7 @@ const blogPosts = [
     }
 
 ];
+
 
 
 
