@@ -11,7 +11,7 @@ const blogPosts = [
         likes: 201
     },
     {
-        title: "Nature Nurture while moments contain their own meanings. ",
+        title: "More life advice for younger me ",
         date: "January 12, 2026",
         excerpt: "Recently I was observing our garden, when I thought to myself a few things. I made an acronymn in my head and wrote it down later. ",
         url: "posts/blog2.html",
@@ -54,6 +54,7 @@ const blogPosts = [
     }
 
 ];
+
 
 
 
