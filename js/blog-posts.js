@@ -22,17 +22,17 @@ const blogPosts = [
     },
     {
         title: "How to optimise conversations. ",
-        date: "December 28, 2025",
-        excerpt: "How to avoid misunderstantment by thinking before you talk. Here are 3 things to evaluate before you open your mouth. ",
-        url: "posts/javascript-fundamentals.html",
-        tags: ["javascript", "programming", "web development", "tutorial"],
+        date: "January 14, 2026",
+        excerpt: "How to avoid misunderstandings: think before you speak. Here are three things to evaluate before letting your unspoken words spill out.",
+        url: "posts/blog3.html",
+        tags: ["think", "conversation", "misunderstand", "avoid", "time"],
         authorTop: true,
         views: 3120,
         likes: 201
     },
     {
         title: "Typography in Digital Design",
-        date: "December 20, 2025",
+        date: "January 20, 2026",
         excerpt: "The subtle art of choosing and pairing fonts that elevate your design. Understanding hierarchy, readability, and aesthetic harmony.",
         url: "posts/typography-design.html",
         tags: ["typography", "design", "fonts", "ui/ux"],
@@ -42,7 +42,7 @@ const blogPosts = [
     },
     {
         title: "Responsive Design in 2026",
-        date: "December 15, 2025",
+        date: "January 15, 2026",
         excerpt: "Modern approaches to building layouts that work everywhere. Beyond breakpoints to truly fluid and adaptive experiences.",
         url: "posts/responsive-design.html",
         tags: ["responsive design", "css", "web development", "mobile"],
@@ -52,4 +52,5 @@ const blogPosts = [
     }
 
 ];
+
 
