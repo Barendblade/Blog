@@ -1,14 +1,14 @@
 // Blog posts data - Add your posts here
 const blogPosts = [
-    {
-        title: "A quote I read some time ago by Jordan Peterson",
-        date: "January 11, 2026",
-        excerpt: "Jordan Peterson once said something that changed my life. Read this short blog to find out what he said. ",
-        url: "posts/blog1.html",
-        tags: ["quote", "Jordan Peterson", "Listen", "learn"],
-        authorTop: true,    // Your personal top blog
-        views: 1250,         // Used to calculate user top blogs
-        likes: 89
+     {
+        title: "How to optimise conversations. ",
+        date: "January 14, 2026",
+        excerpt: "How to avoid misunderstandings: think before you speak. Here are three things to evaluate before letting your unspoken words spill out.",
+        url: "posts/blog3.html",
+        tags: ["think", "conversation", "misunderstand", "avoid", "time"],
+        authorTop: true,
+        views: 3120,
+        likes: 201
     },
     {
         title: "Nature Nurture while moments contain their own meanings. ",
@@ -21,15 +21,17 @@ const blogPosts = [
         likes: 156
     },
     {
-        title: "How to optimise conversations. ",
-        date: "January 14, 2026",
-        excerpt: "How to avoid misunderstandings: think before you speak. Here are three things to evaluate before letting your unspoken words spill out.",
-        url: "posts/blog3.html",
-        tags: ["think", "conversation", "misunderstand", "avoid", "time"],
-        authorTop: true,
-        views: 3120,
-        likes: 201
+        title: "A quote I read some time ago by Jordan Peterson",
+        date: "January 11, 2026",
+        excerpt: "Jordan Peterson once said something that changed my life. Read this short blog to find out what he said. ",
+        url: "posts/blog1.html",
+        tags: ["quote", "Jordan Peterson", "Listen", "learn"],
+        authorTop: true,    // Your personal top blog
+        views: 1250,         // Used to calculate user top blogs
+        likes: 89
     },
+    
+   
     {
         title: "Typography in Digital Design",
         date: "January 20, 2026",
@@ -52,5 +54,6 @@ const blogPosts = [
     }
 
 ];
+
 
 
