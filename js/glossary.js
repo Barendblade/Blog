@@ -33,8 +33,15 @@ const glossaryTerms = [
         id: "stirs",
         term: "stirs",
         definition: "move or cause to move slightly."
-    }
+    },
+    {
+        id: "gedankenlauf", 
+        term: "gedankenlauf", 
+        definition: "Gedankenlauf is a German-style word made from Gedanken (thoughts) and Lauf (run); let your thoughts run before speaking"
+        
+    }    
     
     
 ]
+
 
