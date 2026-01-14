@@ -21,9 +21,9 @@ const blogPosts = [
         likes: 156
     },
     {
-        title: "JavaScript Fundamentals Revisited",
+        title: "How to optimise conversations. ",
         date: "December 28, 2025",
-        excerpt: "Essential JavaScript concepts every developer should master. From closures to async patterns, building a solid foundation for modern development.",
+        excerpt: "How to avoid misunderstantment by thinking before you talk. Here are 3 things to evaluate before you open your mouth. ",
         url: "posts/javascript-fundamentals.html",
         tags: ["javascript", "programming", "web development", "tutorial"],
         authorTop: true,
@@ -52,3 +52,4 @@ const blogPosts = [
     }
 
 ];
+
