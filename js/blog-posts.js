@@ -1,6 +1,16 @@
 // Blog posts data - Add your posts here
 const blogPosts = [
      {
+        title: "Portugues words I learned",
+        date: "January 15, 2026",
+        excerpt: "Do you know what Rio de Janeiro mean. In this blog I will test future me.",
+        url: "posts/blog5.html",
+        tags: ["rio", "janeiro", "dinheiro", "quem", "espera"],
+        authorTop: true,
+        views: 1890,
+        likes: 134
+    },
+     {
         title: "How to optimise conversations. ",
         date: "January 14, 2026",
         excerpt: "How to avoid misunderstandings: think before you speak. Here are three things to evaluate before letting your unspoken words spill out.",
@@ -42,18 +52,10 @@ const blogPosts = [
         views: 890,
         likes: 67
     },
-    {
-        title: "Responsive Design in 2026",
-        date: "January 15, 2026",
-        excerpt: "Modern approaches to building layouts that work everywhere. Beyond breakpoints to truly fluid and adaptive experiences.",
-        url: "posts/responsive-design.html",
-        tags: ["responsive design", "css", "web development", "mobile"],
-        authorTop: true,
-        views: 1890,
-        likes: 134
-    }
+    
 
 ];
+
 
 
 
