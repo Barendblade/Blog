@@ -33,11 +33,11 @@ const blogPosts = [
     
    
     {
-        title: "Typography in Digital Design",
-        date: "January 20, 2026",
-        excerpt: "The subtle art of choosing and pairing fonts that elevate your design. Understanding hierarchy, readability, and aesthetic harmony.",
-        url: "posts/typography-design.html",
-        tags: ["typography", "design", "fonts", "ui/ux"],
+        title: "3 Nuwe woorde",
+        date: "January 15, 2026",
+        excerpt: "3 woorde in spreuke en prediker gelees wat ek my eie wou maak",
+        url: "posts/blog4.html",
+        tags: ["skranderheid", "reikhalsend", "koester", "woorde"],
         authorTop: false,
         views: 890,
         likes: 67
@@ -54,6 +54,7 @@ const blogPosts = [
     }
 
 ];
+
 
 
 
