@@ -1,5 +1,15 @@
 // Blog posts data - Add your posts here
 const blogPosts = [
+       {
+        title: "Good morning Lord. Remind me of your presence all day",
+        date: "January 18, 2026",
+        excerpt: "You won't be able to think of God. You must ask him. Pray",
+        url: "posts/blog6.html",
+        tags: ["pray", "good moring", "bloodshed", "recognise", "voice"],
+        authorTop: true,
+        views: 1890,
+        likes: 134
+    },
      {
         title: "Portugues words I learned",
         date: "January 15, 2026",
@@ -55,6 +65,7 @@ const blogPosts = [
     
 
 ];
+
 
 
 
